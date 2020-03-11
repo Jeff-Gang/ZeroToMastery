@@ -1,0 +1,27 @@
+/* Selector {
+  Property: value;
+} */
+* {
+  font-family: 'Special Elite' ;
+}
+
+h2 {
+  font-family: 'Special Elite' ;
+  color: blue;
+}
+p {
+  font-family: 'Special Elite' ;
+  color: #512C73;
+  font-size: 16px;
+}
+
+.boxmodel {
+  border: 5px solid red;
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 0px 20px;
+}
+
+span{
+  font-size:  3em;
+}

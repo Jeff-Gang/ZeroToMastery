@@ -1,0 +1,105 @@
+JAVASCRIPT TYPES
+-----------------
+1. Number (blue=number type)
+2. String (red=string)
+3. Boolean (purple true / false) [To make an 'Equals' statement, use three = signs]  3 === 3 -or- 3 !== 3 (not equal) // true=1, false=0 //
+4. Undefined [when nothing is assigned to a variable]
+5. Null []
+<!-- 6. Symbol (new in ECMAScript 6) -->
+7. Object
+
+JAVASCRIPT COMPARISONS
+-----------------
+
+!==
+===
+>=
+<=
+>
+<
+
+JAVASCRIPT VARIABLES
+-----------------
+var   [they hold any javascript type]   [needs to start with a letter, not a number, and can also start with $ or _ ] [standard in javascript - firstName <-- camelcase--]
+<!-- let (new in ECMAScript 6)-->
+<!-- const (new in ECMAScript 6)-->
+
+JAVASCRIPT CONDITIONALS
+-----------------
+if
+else
+else if
+<!-- ternary operator -->
+<!-- switch -->
+
+
+JAVASCRIPT LOGICAL OPERATORS
+-----------------
+&& (and)
+|| (or)
+! (not) (this is the not operator - the opposite of)
+
+JAVASCRIPT FUNCTIONS
+-----------------
+var a = function name() {} -- function-expression
+function name() {}. -- Function-declaration
+return
+<!-- () => (new in ECMAScript 6) -->
+alert arguments are what are given to functions "hi there!" -- alert("Hi there!")
+prompt
+
+JAVASCRIPT DATA STRUCTURES
+-----------------
+Array
+Object
+
+JAVASCRIPT LOOPING
+-----------------
+for
+while
+do
+forEach (new in ECMAScript 5)
+
+
+JAVASCRIPT KEYWORDS
+-----------------
+break
+case
+catch
+class
+const
+continue
+debugger
+default
+delete
+do
+else
+export
+extends
+finally
+for
+function
+if
+import
+in
+instanceof
+new
+return
+super
+switch
+this
+throw
+try
+typeof
+var
+void
+while
+with
+yield
+
+
+\\
+
+DRY === Don't repeat yourself
+
+\\

@@ -1,0 +1,32 @@
+CSS Cheat Sheet
+
+Reference:
+*https://www.w3schools.com/cssref/css_selectors.asp
+*https://css-tricks.com/almanac/
+
+Cascading Style Sheets at the most basic level it indicates that the order of CSS rules matter.
+
+
+.class
+#id
+*
+element
+element, element
+element element (only the elements nested inside the larger element will get styled)
+element > element (all (2nd) elements that have 1st element as a parent)
+element + element  (all elements that come directly after the 1st element - so the 1st element after and only the first - not subsequent)
+:hover (p:hover, or a:hover)
+:last-child
+:first-child
+!important (not recommended)
+
+
+What seletors win out in the cascade depends on:
+-Specificity
+-Importance
+-Source Order
+
+//
+
+Only use *Float* with images
+Make sure you *Clear* after for any properties that come after that you do not want to Float
