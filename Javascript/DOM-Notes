@@ -1,0 +1,13 @@
+// DOM Notes
+// With javascript, we can:
+• change all the HTML elements in the page
+• change all the HTML attributes in the page
+• change all the CSS style in the page
+• remove existing HTML elements and attributes 
+• add new HTML elements and attributes 
+• JavaScript can react to all existing HTML events in the page
+• JavaScript can create new HTML events in the page
+
+Window
+    document
+        JavaScript + DOM
