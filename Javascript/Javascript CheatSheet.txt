@@ -24,6 +24,7 @@ var   [they hold any javascript type]   [needs to start with a letter, not a num
 <!-- let (new in ECMAScript 6)-->
 <!-- const (new in ECMAScript 6)-->
 
+
 JAVASCRIPT CONDITIONALS
 -----------------
 if
@@ -39,6 +40,7 @@ JAVASCRIPT LOGICAL OPERATORS
 || (or)
 ! (not) (this is the not operator - the opposite of)
 
+
 JAVASCRIPT FUNCTIONS
 -----------------
 var a = function name() {} -- function-expression
@@ -48,10 +50,12 @@ return
 alert arguments are what are given to functions "hi there!" -- alert("Hi there!")
 prompt
 
+
 JAVASCRIPT DATA STRUCTURES
 -----------------
 Array
 Object
+
 
 JAVASCRIPT LOOPING
 -----------------
