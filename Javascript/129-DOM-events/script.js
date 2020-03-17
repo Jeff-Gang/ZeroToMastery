@@ -9,6 +9,7 @@ button.addEventListener("click", function() {
 var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
+var liclick = document.getElementsByTagName('li');
 
 function inputLength () {
     return input.value.length;
@@ -24,7 +25,7 @@ function createListElement () {
 function addListAfterClick () {
     if (inputLength() > 0) {
         createListElement();
-    } 
+    }
 }
 
 function addListAfterKeypress(event) {
@@ -33,6 +34,17 @@ function addListAfterKeypress(event) {
         }
 }
 
+ul.onclick=function(event){
+ var target=event.target;
+ target.classList.toggle("done");
+}
+
+
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
+
+// liclick.addEventListener("click", toggleDoneClass);
+
+// More about DOM elements ( Nodes )
+// https://www.w3schools.com/js/js_htmldom_nodes.asp

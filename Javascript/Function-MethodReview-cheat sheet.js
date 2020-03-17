@@ -17,7 +17,7 @@ return true;
 alert()
 newFunction (param1, param2);
 
-//assign av ariable
+//assign a xariable
 var a = true;
 
 // function vs. method
