@@ -47,31 +47,29 @@ function addListAfterKeypress(event) {
         }
 }
 
-<<<<<<< HEAD
+
 ul.onclick=function(event){
  var target=event.target;
  target.classList.toggle("done");
 }
 
-=======
+
 // function toggleOnAndOff() {
 //     var toggleDone = document.getElementsByClassName("li");
 //     element.classList.toggle("done");
 // }
->>>>>>> 1f138855f5863f12dca83e62925f9aa1090b8977
 
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
 
-<<<<<<< HEAD
+
 // liclick.addEventListener("click", toggleDoneClass);
 
 // More about DOM elements ( Nodes )
 // https://www.w3schools.com/js/js_htmldom_nodes.asp
-=======
-//input.addEventListener("click", toggleOnAndOff);
 
+//input.addEventListener("click", toggleOnAndOff);
 
 
 //      Another way:  //
@@ -89,4 +87,3 @@ input.addEventListener("keypress", addListAfterKeypress);
 //     }
 // }
 // ul.addEventListener("click", toggleClassDoneOnAndOff);
->>>>>>> 1f138855f5863f12dca83e62925f9aa1090b8977
