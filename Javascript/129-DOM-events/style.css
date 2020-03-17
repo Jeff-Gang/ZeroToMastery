@@ -23,7 +23,13 @@ li {
     font-family: 'Courier New', 'Courier', monospace;
     font-size: 1.2em;
 }
+<<<<<<< HEAD
 
 .done {
   text-decoration: line-through;
 }
+=======
+.done {
+    text-decoration: line-through;
+}
+>>>>>>> 1f138855f5863f12dca83e62925f9aa1090b8977
