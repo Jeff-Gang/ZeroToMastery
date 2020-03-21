@@ -1,0 +1,28 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+}
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#first {
+    font-size: 1.7em;
+    color: #FF6830;
+}
+
+.second {
+    font-size: 2em;
+}
+
+li {
+    font-family: 'Courier New', 'Courier', monospace;
+    font-size: 1.2em;
+}
+button.addbutton {
+  color: blue;
+}

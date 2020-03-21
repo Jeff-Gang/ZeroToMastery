@@ -45,7 +45,7 @@ var a = function name() {} -- function-expression
 function name() {}. -- Function-declaration
 return
 <!-- () => (new in ECMAScript 6) -->
-alert arguments are what are given to functions "hi there!" -- alert("Hi there!")
+alert --- arguments are what are given to functions "hi there!" -- alert("Hi there!")
 prompt
 
 JAVASCRIPT DATA STRUCTURES
