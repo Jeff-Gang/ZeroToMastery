@@ -21,8 +21,8 @@ JAVASCRIPT COMPARISONS
 JAVASCRIPT VARIABLES
 -----------------
 var   [they hold any javascript type]   [needs to start with a letter, not a number, and can also start with $ or _ ] [standard in javascript - firstName <-- camelcase--]
-<!-- let (new in ECMAScript 6)-->
-<!-- const (new in ECMAScript 6)-->
+let  // (new in ECMAScript 6)
+const // (new in ECMAScript 6)
 
 
 JAVASCRIPT CONDITIONALS
@@ -30,8 +30,9 @@ JAVASCRIPT CONDITIONALS
 if
 else
 else if
-<!-- ternary operator -->
-<!-- switch -->
+ternary operator - // a neater way to do if / else conditional - uses  "?" and ":" - example:>
+                  //  var answer = isUserValid(true) ? "You may enter" : "Access Denied";
+switch  // great for adding a lot of conditionals - (C64 game)
 
 
 JAVASCRIPT LOGICAL OPERATORS
