@@ -30,56 +30,59 @@ const array = [
 //Create an array using forEach that has all the usernames with a "!" to each of the usernames
 
 // My ATTEMPT::
-let newArrayUserNames = []
-let newArray = array.forEach(user => {
-  newArray.push(username + "!");
+
+const newArrayUserNames = []
+const newArray = array.forEach((username) => {
+  newArrayUserNames.push(username + "!");
 })
 console.log(newArrayUserNames);
-// // WRONG!
+// // // WRONG! - 
+// // MY LOG: (4) ["[object Object]!", "[object Object]!", "[object Object]!", "[object Object]!"]
+
 
 // //Andrei's answer:
-// let newArray = []
-// array.forEach(user => {
-// 	let { username } = user;
-// 	username = username + "!";
-// 	newArray.push(username);
-// })
-// console.log(newArray);
-
-// // this solution also errored in my Chrome browser: 
-// // VM235:1 Uncaught SyntaxError: Identifier 'array' has already been declared
-// //     at <anonymous>:1:1
-// ???? // Don't know the real solution here....
+let newArray = []
+array.forEach(user => {
+	let { username } = user;
+	username = username + "!";
+	newArray.push(username);
+})
+console.log(newArray);
 
 
 //Create an array using map that has all the usernames with a "? to each of the usernames
 // MY ATTEMPT
-const mapArray = array.map((username) => {
+const mapArray = array.map((user) => {
+  let { username } = user;
   return username + "?";
 })
 console.log(mapArray);
 
-// Andrei's answer:
-// let newArray = []
-// array.forEach(user => {
-// 	let { username } = user;
-// 	username = username + "!";
-// 	newArray.push(username);
-// })
-// console.log(newArray);
 
 //Filter the array to only include users who are on team: red
-//My REWORKED solution
+//My solution
+
 const filterArray = array.filter(user => {
-  return.user.team === "red";
+  let { team } = user;
+  return team === "red";
 })
-console.log(filterArray)
+console.log(filterArray);
+// My Return:
+// console.log(filterArray);
+// VM1212:33 
+// (2) [{…}, {…}]
+// 0: {username: "john", team: "red", score: 5, items: Array(3)}
+// 1: {username: "susy", team: "red", score: 55, items: Array(3)}
+// length: 2
+// __proto__: Array(0)
+
 
 //Find out the total score of all users using reduce
 const reduceArray = array.reduce((accumulator, user) => {
   return accumulator + user.score
 }, 0);
 console.log(reduceArray);
+
 
 // (1), what is the value of i?
 // (2), Make this map function pure:
