@@ -64,7 +64,8 @@ for
 while
 do
 forEach (new in ECMAScript 5)
-
+for of 	(es6)
+for in	(es7)
 
 JAVASCRIPT KEYWORDS
 -----------------
