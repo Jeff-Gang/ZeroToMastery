@@ -9,6 +9,7 @@
 		<key>Blue Component</key>
 		<real>0.070588238537311554</real>
 		<key>Color Space</key>
+		<string>Calibrated</string>
 		<key>Green Component</key>
 		<real>0.070588238537311554</real>
 		<key>Red Component</key>
