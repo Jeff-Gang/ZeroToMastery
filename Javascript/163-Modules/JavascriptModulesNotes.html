@@ -1,0 +1,84 @@
+<--  The mountain of modules -
+Back in the day when things started, people were doing
+inline JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type='text/javascript'>
+    function a() {
+        alert('a');
+    function b() {
+        alert('b');
+    function c() {
+        alert('c');
+    }
+/*  problem is, 
+        1. lack of code reusability, and 
+        2. pollution of the global namespace.-->*/
+    </script>
+
+
+<-- Then, we started using script tags -->
+<script type="text/javascript" src="script1.js"></script>
+<script type="text/javascript" src="script2.js"></script>
+/*  problem is, 
+    1. Still have to copy and paste into each HTML file 
+    2. Depedency resolution - scripts have to be loaded in proper order 
+    3. Still polluting global namespace
+    */
+
+/*  Then, we came up with IIFE - Immediately invoked function expression
+basically a confusing way to deal with global namespace, 
+by running functions in brackets so they run in the order you want them do:
+*/
+//JS1 first file loaded:
+var myApp = {}
+
+//JS2 then loads:
+(function(){
+    myApp.add = function(a,b) {
+        return a + b;
+    }
+})();
+----jQuery uses this, allows us to use $------
+//still lack of dependency resolution, can have hundred linked files,
+// all have to be loaded in order, still have dependencies that can be tricky
+
+
+
+
+---------CommonJS + Browserify----------
+//   (Browserify is a module bundler - 
+// runs through all the files, condenses it 
+// into one file - [usually bundle.js])
+
+// js1 (add.js)
+ module.exports = function add(a,b){
+ return a+b;
+}
+
+//js2
+var add = require('./add');
+
+-------------ES6 + Webpack2--------------
+//js1
+export const add = (a, b) => a + b;
+//or
+export default function add() {
+    return a + b;
+}
+
+//js2
+import { add } from './add';
+//or
+import add from './add';
+
+</body>
+</html>
+
