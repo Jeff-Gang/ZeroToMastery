@@ -47,8 +47,8 @@ open . 	Opens the directory
 top 	Displays active processes. Press q to quit
 nano [file] 	Opens the Terminal it’s editor
 pico [file] 	Opens the Terminal it’s editor
-q 	Exit
-clear 	Clear screen
+q 	            Exit
+clear 	        Clear screen
 
 
 

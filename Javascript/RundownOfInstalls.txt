@@ -1,0 +1,11 @@
+// Current installs
+
+// homebrew
+// git
+// visual studio code
+// github desktop
+// node.js
+// npm
+// live-server
+// lodash
+// browserify

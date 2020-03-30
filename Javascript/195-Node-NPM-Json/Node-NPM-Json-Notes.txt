@@ -1,0 +1,28 @@
+// Node / NPM / Json notes //
+
+Node uses v8 engine to run javascript outside of the browser
+
+NPM = Node package manager
+
+1. Install node first in order to use the command line to install NPM packages
+2. To make sure you have Node and NPM installed, check the versions through the terminal window:
+// node -v
+// npm -v
+
+3. When you start a new project, & you want to use NPM packages, then get in your project folder, 
+open up Terminal, and type: 
+npm init
+which installs a "package.json" file.
+
+
+//  VERSION NUMBER (semver) explanation //
+
+        12.13.4
+
+    12  .   13  .   4
+    |       |       |
+    |       |      patch release
+    |       |
+    |       minor release
+    |
+    major release
