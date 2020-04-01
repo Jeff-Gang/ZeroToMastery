@@ -49,6 +49,13 @@ Create and check out a new branch named <branch>. Drop the -b flag to checkout a
 git merge <branch>
 Merge <branch> into the current branch.
 
+git push origin --delete <the_remote_branch>
+Delete the remote branch
+
+git branch -d <branch>
+Delete the local branch
+
+
 //
 
 REMOTE REPOSITORIES
