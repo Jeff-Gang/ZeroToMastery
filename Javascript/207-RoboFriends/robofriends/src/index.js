@@ -5,10 +5,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'tachyons';
-import { robots } from './robots';
 
-ReactDOM.render(<CardList robots={robots}/>, document.getElementById('root'));
 
+ReactDOM.render(<App />, document.getElementById('root'));
 //  <React.StrictMode>
 //    <App />
 //  </React.StrictMode>,
