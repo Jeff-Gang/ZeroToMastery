@@ -19,11 +19,18 @@ const promise2 = new Promise ((resolve, reject) => {
 })
 
 // 3)
+// WRONG:
+// Promise.resolve('Success', 4000).then(function(value) {
+//     console.log(value);
+//   }
+//   );
 
-Promise.resolve('Success', 4000).then(function(value) {
-    console.log(value);
-  }
-  );
+//Right:
+const promise = Promise.resolve(
+    setTimeout(() => {
+      console.log("success");
+    }, 4000)
+
 
   // 5)
 

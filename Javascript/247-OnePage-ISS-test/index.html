@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Space Station Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body style="background-image: url(nightsky.jpg);
+background-size: cover;">
+    <div class="container">
+        <h1 class="display-4" style="margin-top: 75px; margin-bottom:.5em; color:aliceblue">International Space Station Tracker</h1> 
+         <div class="d-flex">
+            <button class="btn btn-warning mr-4" id="getLocation">Get Current Location</button>
+         </div>
+        <hr>
+        <div id="output" style="color:aliceblue">
+        </div>
+    </div>
+   
+   <script>
+        document.getElementById('getLocation').addEventListener
+        ('click', getLocation);
+
+    // async function fetchLocation() {
+    //     const resp = await fetch('http://api.open-notify.org/iss-now.json')
+    //     const data = await resp.json();
+    //     .return (data);
+    // }
+    
+        function getLocation(){
+            fetch('http://api.open-notify.org/iss-now.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+
+            
+            });
+
+
+
+        function appendData(data) {
+            var mainContainer = document.getElementById("output");   
+            var div = document.createElement("div");   
+            div.innerHTML = data;
+        //         // div.innerHTML = data.object;
+        //         // div.innerHTML = { object:'latitude, longitude' };
+        //         mainContainer.appendChild(div);
+                console.log(data);
+        }
+            
+            // .then((res) => res.json())
+            // .then((data) => {
+            //     console.log([]);
+            //     // document.getElementById('output').innerHTML = output;
+            // })
+        }
+
+    </script>
+</body>
+</html>
