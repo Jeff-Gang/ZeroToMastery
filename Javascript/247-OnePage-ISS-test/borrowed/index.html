@@ -1,0 +1,80 @@
+<html lang="en-us">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/syntax.css" rel="stylesheet">
+  <title>Open Notify</title>
+ </head>
+<body>
+<div class="wrapper">
+ <div id="header">
+ <div class="container">
+  <h1><a href="/">Open Notify</a></h1>
+  <ul id="navigation" class="nav nav-tabs">
+    
+      <li class="active">
+        <a href="/">Home</a>
+      </li>
+    
+      <li >
+        <a href="/Open-Notify-API">API Docs</a>
+      </li>
+    
+      <li >
+        <a href="https://github.com/open-notify">Source Code</a>
+      </li>
+    
+      <li >
+        <a href="/about">About</a>
+      </li>
+     
+  </ul>
+ </div>
+</div>
+<div id="content">
+ <div class="container">
+  <div class="row">
+   <div class="span8">
+    <script src='http://code.jquery.com/jquery-2.0.3.min.js'> </script>
+<h1 id='open_apis_from_space'>Open APIs From Space</h1>
+
+<p><strong>Open Notify</strong> is an open source project to provide a simple programming interface for some of NASA&#8217;s awesome data. I do some of the work to take raw data and turn them into <a href='http://www.makeuseof.com/tag/api-good-technology-explained/'>APIs</a> related to space and spacecraft.</p>
+
+<h2 id='projects'>Projects</h2>
+
+<h3 id='apis'>APIs:</h3>
+
+<ul>
+<li>
+<p><a href='/Open-Notify-API/ISS-Location-Now'>Current Location of the International Space Station</a></p>
+
+<ul>
+<li>Example: <p>The ISS is currently over <span id='isslat'>?</span>&deg; N, <span id='isslon'>?</span>&deg; E</p></li>
+</ul>
+</li>
+</ul>
+<script>
+
+function getISS () {
+    $.getJSON('http://api.open-notify.org/iss-now.json?callback=?', function(data) {
+        var lat = data['iss_position']['latitude'];
+        var lon = data['iss_position']['longitude'];
+        $('#isslat').html(Math.round(lat*1000)/1000.0);
+        $('#isslon').html(Math.round(lon*1000)/1000.0);
+    });
+    setTimeout(getISS, 3000); 
+}
+
+getISS();
+
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

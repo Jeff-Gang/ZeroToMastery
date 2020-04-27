@@ -20,6 +20,8 @@ const promise = Promise.resolve(
   }, 4000)
 );
 
+
+
 // #4) Catch this error and console log 'Ooops something went wrong'
 Promise.reject('failed')
   .catch(console.log('Ooops something went wrong'))
