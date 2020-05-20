@@ -15,7 +15,7 @@ background-size: cover;">
             <button class="btn btn-warning mr-4" id="getLocation">Get Current Location</button>
          </div>
         <hr>
-        <div id="output" style="color:aliceblue">
+        <div id="output" style="color:white">
         </div>
     </div>
    
@@ -48,7 +48,7 @@ background-size: cover;">
         function appendData(data) {
             var mainContainer = document.getElementById("output");   
             var div = document.createElement("div");   
-            div.innerHTML = data;
+            div.innerHTML = data.iss_position;
         //         // div.innerHTML = data.object;
         //         // div.innerHTML = { object:'latitude, longitude' };
         //         mainContainer.appendChild(div);
